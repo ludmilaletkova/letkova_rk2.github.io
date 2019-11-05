@@ -1,0 +1,57 @@
+<html>
+
+
+   <title> Леткова Людмила ИУ4-12Б </title>
+
+<body>
+		<table class="striped"> 
+<tr class="header"> 
+<td>1</td> 
+<td>2</td> 
+<td>3</td> 
+<td>4</td> 
+<td>5</td> 
+<td>6</td>
+<td>7</td> 
+<td>8</td> 
+<td>9</td> 
+<td>10</td> 
+
+</tr> 
+<?php 
+$i = 0; 
+while ($do = mysql_fetch_array($query)) 
+{ 
+$class = ($i == 0) ? "" : "alt"; 
+echo "<tr class=\"".$class."\">"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>"; 
+echo "<td>".$do[]."</td>";
+echo "</tr>"; 
+$i = ($i==0) ? 1:0; 
+} 
+
+?> 
+</table>
+
+<?php 
+CREATE TABLE IF NOT EXISTS `` (
+     `` int(6) unsigned NOT NULL,
+     ``  varchar(20) NOT NULL,
+     `` int(2) unsigned NOT NULL,
+     `` varchar(6)  NOT NULL
+) DEFAULT CHARSET=UTF8;
+
+INSERT INTO `students`(``,``,``,``) VALUES
+?>
+
+</body>
+
+</html>
